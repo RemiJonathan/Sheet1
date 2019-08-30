@@ -104,8 +104,8 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Web.config" />
-    <Content Include="Views\Semester5\Index.cshtml" />
-    <Content Include="Views\Testimonials\Index.cshtml" />
+    <Content Include="Views\Semester5\Semester5.cshtml" />
+    <Content Include="Views\Semester5\Testimonials.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
