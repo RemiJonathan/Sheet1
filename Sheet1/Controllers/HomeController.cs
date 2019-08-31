@@ -13,5 +13,15 @@ namespace Sheet1.Controllers
         {
             return View();
         }
+
+        public ActionResult Semester5()
+        {
+            return View();
+        }
+
+        public ActionResult Testimonials()
+        {
+            return View();
+        }
     }
 }
