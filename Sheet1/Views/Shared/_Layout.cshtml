@@ -6,9 +6,12 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/stylesheet.css" rel="stylesheet" type="text/css" />
     <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Manjari:100&display=swap" rel="stylesheet">
+
 </head>
-<body>
+<body style="font-family: 'Manjari', sans-serif;">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -21,16 +24,59 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item"> <a href="./">Home</a></li>
-                    <li class="nav-item"> <a href="Semester5">Semester 5</a></li>
-                    <li class="nav-item"><a href="Testimonials">Testimonials</a></li>
+                    <li class="nav-item"> <a href="~/./">Home</a></li>
+                    <li class="nav-item"> <a href="~/Home/Semester5">Semester 5</a></li>
+                    <li class="nav-item"><a href="~/Home/Testimonials">Testimonials</a></li>
                 </ul>
             </div>
         </div>
     </div>
 
     <div class="container body-content">
+        <br />
+        <br />
+        <aside id="asidesem">
+            <h5>Open House</h5>
+            <img src="~/Content/images/sign.png" alt="Office 365 logo">
+            <p>
+                Choosing a cégep is one of the most important decisions you will make during your lifetime. Champlain College Saint-Lambert understands the importance of choosing the cégep that provides you with the best preparation for university or the
+                job market. <a href="http://www.champlainonline.com/champlainweb/future-students/visiting-champlain/">Read More</a>
+            </p>
+            <hr>
+            <h5>Champlain College Harlem Shake</h5>
+            <video width="200" height="125" controls="">
+                <source src="~/Content/images/harlem.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>
+                School isn't just about studying... We also get to go crazy at times!
+            </p>
+            <hr>
+            <h5>Teachers</h5>
+            <p>
+                A small chart of teachers ou might encounter while studying at Champlain College in COmputer Science
+            </p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th rowspan="2">Html</th>
+                        <td>Jennifer Lieutec</td>
+                    </tr>
+                    <tr>
+                        <td>Ellie Mozaffari</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Java</th>
+                        <td>Samia Ramadan</td>
+                    </tr>
+                    <tr>
+                        <td>Ellie Mozaffari</td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
         @RenderBody()
+
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
